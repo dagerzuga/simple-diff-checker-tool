@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Diff Checker Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Simple Diff Checker Tool</h1>
+    </header>
+    <main>
+        <div class="text-inputs">
+            <div class="input-container">
+                <label for="original-text">Original Text</label>
+                <textarea id="original-text" class="js-text-input" placeholder="Paste your original text here..."></textarea>
+            </div>
+            <div class="input-container">
+                <label for="modified-text">Modified Text</label>
+                <textarea id="modified-text" class="js-text-input" placeholder="Paste your modified text here..."></textarea>
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="js-compare-button">Compare Texts</button>
+        </div>
+        <div class="result-container js-result-container"></div>
+    </main>
+    <footer>
+        <p>This tool doesn't store any kind of information</p>
+        <a href="https://github.com/dagerzuga/simple-diff-checker-tool" target="_blank" rel="noopener noreferrer">
+            GitHub Repo
+        </a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

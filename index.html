@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <header>
         <h1>Simple Diff Checker Tool</h1>
@@ -16,24 +18,39 @@
         <div class="text-inputs">
             <div class="input-container">
                 <label for="original-text">Original Text</label>
-                <textarea id="original-text" class="js-text-input" placeholder="Paste your original text here..."></textarea>
+                <textarea id="original-text" class="js-text-input"
+                    placeholder="Paste your original text here..."></textarea>
             </div>
             <div class="input-container">
                 <label for="modified-text">Modified Text</label>
-                <textarea id="modified-text" class="js-text-input" placeholder="Paste your modified text here..."></textarea>
+                <textarea id="modified-text" class="js-text-input"
+                    placeholder="Paste your modified text here..."></textarea>
             </div>
         </div>
         <div class="button-container">
             <button class="js-compare-button">Compare Texts</button>
         </div>
+
+        <div class="diff-summary">
+            <div class="legend">
+                <span class="legend-item added">Added</span>
+                <span class="legend-item removed">Removed</span>
+            </div>
+            <div class="change-count">
+                <span class="additions-count js-additions-count">0 additions</span>
+                <span class="deletions-count js-deletions-count">0 deletions</span>
+            </div>
+        </div>
+
         <div class="result-container js-result-container"></div>
     </main>
     <footer>
-        <p>This tool doesn't store any kind of information</p>
+        <p>This tool doesn't store any kind of information.</p>
         <a href="https://github.com/dagerzuga/simple-diff-checker-tool" target="_blank" rel="noopener noreferrer">
             GitHub Repo
         </a>
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>

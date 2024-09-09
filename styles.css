@@ -8,6 +8,7 @@
   --text-add: #05400a;
   --text-remove: #7f0000;
   --border-color: #ddd;
+}
 
 * {
   box-sizing: border-box;
@@ -204,4 +205,47 @@ footer svg {
     border-right: 1px solid var(--border-color);
     border-bottom: none;
   }
+}
+
+.diff-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.legend {
+  display: flex;
+  gap: 1rem;
+}
+
+.legend-item {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.legend-item.added {
+  background-color: var(--highlight-add);
+  color: var(--text-add);
+}
+
+.legend-item.removed {
+  background-color: var(--highlight-remove);
+  color: var(--text-remove);
+}
+
+.change-count {
+  font-weight: bold;
+}
+
+.additions-count {
+  color: var(--text-add);
+  margin-right: 1rem;
+}
+
+.deletions-count {
+  color: var(--text-remove);
 }

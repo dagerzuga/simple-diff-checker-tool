@@ -105,6 +105,7 @@ button:hover {
 }
 
 .diff-column {
+  width: 50%;
   padding: 10px;
   white-space: pre-wrap;
   word-break: break-all;
